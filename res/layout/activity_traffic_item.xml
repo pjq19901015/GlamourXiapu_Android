@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/activity_traffic_item_rlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	  	 <ImageView 
+		     android:layout_width="100dp"
+		     android:layout_height="80dp"
+		     android:id="@+id/activity_traffic_item_imageview"/>
+
+		 <TextView
+		     android:layout_toRightOf="@id/activity_traffic_item_imageview"
+		     style="@style/site_item_text"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_centerVertical="true"
+		     android:layout_margin="5dp"
+		     android:text="dafd" 
+		     android:id="@+id/activity_traffic_item_textview_title"/>
+  
+		 <ImageView
+		     android:layout_alignParentRight="true"
+		     android:layout_centerVertical="true" 
+		     android:layout_width="20dp"
+		     android:layout_height="20dp"
+		     android:src="@drawable/guide_item_arrow"
+		     />
+	</RelativeLayout>
+		
+
+</LinearLayout>

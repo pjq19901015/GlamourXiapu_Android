@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/head_background">
+    	<ImageView 
+    	    android:padding="5.0dip"
+    	    android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/back"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:id="@+id/activity_guide_download_back"/>
+        <TextView 
+            android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:textAppearance="@android:style/TextAppearance.Large"
+        	android:text="@string/guide_download"
+        	android:textColor="#ffffff"
+        	android:layout_centerInParent="true"/>
+        	
+        <ImageView 
+            android:padding="5.0dip"
+    	    android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/download_manage"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+        	android:id="@+id/download_manage"
+        	android:visibility="gone"/><!-- 设置为隐藏 -->
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/download_tab_bg">
+        <RadioGroup 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:orientation="horizontal"
+    		android:id="@+id/activity_guide_download_radiogroup">
+            <RadioButton 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:checked="true"
+    			android:text="@string/download_done"
+    			android:button="@null"
+    			android:padding="5dp"
+    			android:background="@drawable/selector_download_left"
+    			android:gravity="center"
+    			android:id="@+id/download_done"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/navigation_center"
+    			android:button="@null"
+    			android:padding="5dp"
+    			android:background="@drawable/selector_download_middle"
+    			android:gravity="center"
+    			android:id="@+id/navigation_center"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/downloading"
+    			android:button="@null"
+    			android:padding="5dp"
+    			android:background="@drawable/selector_download_middle"
+    			android:gravity="center"
+    			android:id="@+id/downloading"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/update"
+    			android:button="@null"
+    			android:padding="5dp"
+    			android:background="@drawable/selector_download_right"
+    			android:gravity="center"
+    			android:id="@+id/update"/>  
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

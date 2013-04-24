@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_background" 
+            android:layout_alignParentTop="true"
+            android:id="@+id/activity_hotel_xindongfang_top">
+            <ImageView 
+	    	    android:padding="5.0dip"
+	    	    android:layout_width="wrap_content" 
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/back"
+	        	android:layout_alignParentLeft="true"
+	        	android:layout_centerVertical="true"
+	        	android:id="@+id/activity_hotel_xindongfang_back"/>
+            <TextView 
+	            android:layout_width="wrap_content" 
+	        	android:layout_height="wrap_content"
+	        	android:textAppearance="@android:style/TextAppearance.Large"
+	        	android:text="@string/hotel_xindongfang"
+	        	android:textColor="#ffffff"
+	        	android:layout_centerInParent="true"/>
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_hotel_xindongfang_top" 
+        android:layout_above="@+id/bottom"
+        android:id="@+id/activity_hotel_xindongfang_up">
+            
+        <RelativeLayout 
+            android:id="@+id/activity_hotel_xindongfang_imageview_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+	        <ImageView 
+	            android:src="@drawable/xindongfang"
+	            android:layout_width="150dp"
+	            android:layout_height="120dp"
+	            android:scaleType="fitXY"/>   
+		</RelativeLayout>
+		
+		<RelativeLayout 
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/activity_hotel_xindongfang_imageview_gl" 
+	        android:layout_alignBottom="@+id/activity_hotel_xindongfang_imageview_gl">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/hotel_xindongfang" 
+	            android:layout_margin="5dp"  
+	            style="@style/site_text"	      
+	            android:id="@+id/activity_hotel_xindongfang_textview_gl"/>
+   
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/activity_hotel_xindongfang_textview_gl"
+	            android:text="@string/hotel_message"
+	            android:textColor="@color/gray"
+	            android:layout_margin="5dp"
+	            android:id="@+id/activity_hotel_xindongfang_textview_gg"/>   
+	        
+	        <RelativeLayout
+	            android:id="@+id/activity_hotel_xindongfang_imageview_heart"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp"
+	            android:layout_below="@id/activity_hotel_xindongfang_textview_gg" >
+	            
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+			        android:layout_height="wrap_content">
+		            <ImageView 
+		                android:src="@drawable/heart_small_progress"
+		                android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"/>
+		            <ImageView 
+		                android:src="@drawable/heart_small_progress"
+		                android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"/>
+		            <ImageView 
+		                android:src="@drawable/heart_small_progress"
+		                android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"/>
+		            <ImageView 
+		                android:src="@drawable/heart_small_progress"
+		                android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"/>
+		            <ImageView 
+		                android:src="@drawable/heart_small_secondary_progress"
+		                android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"/>
+	            </LinearLayout>
+	        </RelativeLayout>
+			
+	        <RelativeLayout 
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+		        android:layout_alignParentBottom="true"> 	        
+	            <TextView 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_alignParentLeft="true" 
+	                android:layout_centerVertical="true"
+	                android:textColor="@color/gray" 
+	                android:text="35次评价"/>
+	            <ImageButton
+	                android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:src="@drawable/community"
+		        	android:layout_alignParentRight="true"
+		        	android:background="@color/white"
+		        	android:id="@+id/activity_hotel_xindongfang_imagebutton_community"/>
+	        </RelativeLayout>
+		</RelativeLayout>
+		
+		<RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/activity_hotel_xindongfang_imageview_gl"
+	        android:layout_marginTop="5dp">
+	        	<RelativeLayout 
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:id="@+id/activity_hotel_xindongfang_tab">   
+		            <RadioGroup 
+			            android:layout_width="match_parent"
+			    		android:layout_height="wrap_content"
+			    		android:layout_centerInParent="true"
+			    		android:orientation="horizontal"
+			    		android:id="@+id/activity_hotel_xindongfang_radiogroup_middle">
+		                <RadioButton  	                     
+		                    android:layout_width="100dp" 
+		                    android:layout_height="wrap_content" 
+		                    android:background="@drawable/selector_site_left" 
+		                    android:button="@null" 
+		                    android:checked="true" 
+		                    android:gravity="center" 
+		                    android:padding="5dp" 
+		                    android:text="@string/tabhost_radiobutton_guide"
+		                    android:id="@+id/activity_hotel_xindongfang_tabone"/>
+			            <RadioButton 
+			                android:layout_width="100dp"
+			    			android:layout_height="wrap_content"
+			    			android:text="@string/site_message"
+			    			android:button="@null"
+			    			android:padding="5dp"
+			    			android:background="@drawable/selector_site_middle"
+			    			android:gravity="center"
+			    			android:id="@+id/activity_hotel_xindongfang_tabtwo"/>
+			            <RadioButton 
+			                android:layout_width="match_parent"
+			    			android:layout_height="wrap_content"
+			    			android:text="@string/site_comments"
+			    			android:button="@null"
+			    			android:padding="5dp"
+			    			android:background="@drawable/selector_site_right"
+			    			android:gravity="center"
+			    			android:id="@+id/activity_hotel_xindongfang_tabthree"/>  
+			        </RadioGroup>
+		        </RelativeLayout>
+		        <RelativeLayout 
+		            android:layout_width="match_parent"
+	        	    android:layout_height="match_parent"
+	        	    android:layout_below="@id/activity_hotel_xindongfang_tab"
+	        	    android:background="@color/site_text_background"
+	        	    android:layout_marginTop="10dp">
+		            <ScrollView 
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent">  		           
+			            <TextView 		           
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"				           
+				            style="@style/site_text"  				            
+				            android:id="@+id/activity_hotel_xindongfang_textView_tab"/>
+		            </ScrollView>
+		        </RelativeLayout>
+		        
+		       
+    	</RelativeLayout>
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout 
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:id="@+id/bottom">
+
+         <RadioGroup
+             android:id="@+id/activity_hotel_xindongfang_radiogroup_bottom"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/site_item_bar_background"
+             android:gravity="center_vertical"
+             android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/site_item_favorite"
+                style="@style/site_radiobutton_bottom"
+                android:layout_marginTop="4.0dip"
+                android:drawableTop="@drawable/site_item_icon_favorite"
+                android:tag="site_item_favorite"/>
+			<RadioButton
+                android:id="@+id/site_item_map"
+                style="@style/site_radiobutton_bottom"
+                android:layout_marginTop="4.0dip"
+                android:drawableTop="@drawable/site_item_icon_map"
+                android:tag="site_item_map"/>
+			<RadioButton
+                android:id="@+id/site_item_community"
+                style="@style/site_radiobutton_bottom"
+                android:layout_marginTop="4.0dip"
+                android:drawableTop="@drawable/site_item_icon_community"
+                android:tag="site_item_community"/>                  
+        </RadioGroup>
+    </RelativeLayout>	 
+    
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/pop_background"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="30dp">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/mapview_popview_tv_title"
+    	android:singleLine="true"/>
+    <ImageView 
+        android:contentDescription="@string/mapview_popview_introduction"
+     	android:background="@drawable/detail"    
+        android:layout_width="30dp"
+    	android:layout_height="30dp"    
+    	android:layout_toRightOf="@id/mapview_popview_tv_title"
+    	android:layout_marginLeft="5dp"  
+    	android:id="@+id/mapview_popview_iv"/>
+
+</RelativeLayout>

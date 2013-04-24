@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">魅力霞浦</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="traffic">交通</string>
+    <string name="airport">航空</string>
+    <string name="deport">铁路</string>
+    <string name="bus">公交</string>
+    <string name="street">街道 </string>
+    <string name="taxi">出租车 </string>
+    <string name="water_transportation">水上交通 </string>
+    <string name="shopping">购物 </string>
+    <string name="fun">娱乐 </string>
+    <string name="telephone">电话 </string>
+    <string name="overviewcity">城市概览 </string>
+    
+    <!--  tabhost.xml-->
+	<string name="tabhost_radiobutton_plan">我的计划</string>
+	<string name="tabhost_radiobutton_map">地图</string>
+	<string name="tabhost_radiobutton_guide">导游</string>
+	<string name="tabhost_radiobutton_comment">评论广场</string>
+	<string name="tabhost_radiobutton_more">更多</string>
+	<string name="tabhost_radiobutton_summarize">概述</string>
+	<string name="tabhost_radiobutton_address">地址</string>
+	
+	<!--  activity_guide_download.xml-->
+	<string name="guide_download">导览下载</string>
+	<string name="download_done">已完成</string>
+	<string name="navigation_center">导览中心</string>
+	<string name="downloading">正在下载</string>
+	<string name="update">更新</string>
+	
+	<!--  mapview_popview.xml-->
+	<string name="mapview_popview_introduction">介绍</string>
+	
+	<!--  activity_site.xml-->
+	<string name="site">景点</string>
+	
+	<!--  activity_site_yangjiaxi.xml-->
+	<string name="site_yangjiaxi">杨家溪</string>
+	<string name="site_guanguang">观光</string>
+	<string name="site_message">交通</string>
+	<string name="site_comments">评论</string>
+	
+	<!--  activity_site_xiyangdao.xml-->
+	<string name="site_xiyangdao">西洋岛</string>
+	
+	<!--  activity_site_liuyunsi.xml-->
+	<string name="site_liuyunsi">流云寺</string>
+	
+	<!--  activity_site_gaoluo.xml-->
+	<string name="site_gaoluo">高罗</string>
+	
+	<!--  activity_site_xiaputantu.xml-->
+	<string name="site_xiaputantu">霞浦滩涂</string>
+	
+	<!--  hotel-->
+	<string name="hotel">住宿</string>
+	<string name="hotel_dijing">帝景国际酒店</string>
+	<string name="hotel_xindongfang">新东方大酒店</string>
+	<string name="hotel_su8">速8</string>
+	<string name="hotel_manhadun">曼哈顿大酒店</string>
+	<string name="hotel_huandao">环岛大酒店</string>
+	<string name="hotel_message">星级酒店</string>
+	
+	<!-- restaurant-->
+	<string name="restaurant">餐饮</string>
+	<string name="restaurant_hutang">糊汤</string>
+	<string name="restaurant_niurouguang">老字号牛肉馆</string>
+	<string name="restaurant_tiantianmianguan">天天面馆</string>
+	<string name="restaurant_xiongdihuoguo">兄弟火锅</string>
+	<string name="restaurant_yantiandadi">盐田大弟排挡</string>
+	
+	<!-- shopping-->
+	<string name="shopping_longshoulu">龙首路</string>
+	<string name="shopping_buxingjie">步行街</string>
+	<string name="shopping_taikanglu">太康路</string>
+	<string name="shopping_baisheng">百盛</string>
+	<string name="shopping_nanjiebaihuo">南街百货</string>
+	
+	<!--fun-->
+	<string name="fun_wenhuaguangchang">文化广场</string>
+	<string name="fun_huangjiayihao">皇家一号</string>
+	<string name="fun_funingwhgy">福宁文化公园</string>
+	<string name="fun_jiudaguang">九大馆</string>
+	<string name="fun_baidu">百度音乐会所</string>
+	<string name="fun_tongyishouge">同一首歌</string>
+	
+	
+</resources>

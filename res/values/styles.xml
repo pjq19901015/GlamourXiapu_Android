@@ -1,0 +1,55 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	
+    <style name="tabhost_radiobutton_bottom">
+         <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+         <item name="android:textColor">#ffffff</item>
+         <!-- <itme name="android:ellipsize">marquee</itme> --><!-- 内容不够加省略号（跑马灯） -->
+         <item name="android:gravity">center_horizontal</item>   
+         <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+         <item name="android:background">@drawable/selector_tab_button</item>
+         <item name="android:layout_width">fill_parent</item>
+       	 <item name="android:layout_height">wrap_content</item>
+       	 <item name="android:singleLine">true</item>
+       	 <item name="android:button">@null</item>  <!-- 将原来系统的RadioButton图标给隐藏起来 -->
+       	 <item name="android:layout_weight">1.0</item>
+       	 <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+    </style>
+    
+    <style name="site_radiobutton_bottom">          
+         <item name="android:textColor">#ffffff</item>           
+         <item name="android:gravity">center_horizontal</item>   
+         <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+         <item name="android:background">@drawable/selector_site_item_favorite</item>
+         <item name="android:layout_width">fill_parent</item>
+       	 <item name="android:layout_height">wrap_content</item>
+       	 <item name="android:singleLine">true</item>
+       	 <item name="android:button">@null</item>  <!-- 将原来系统的RadioButton图标给隐藏起来 -->
+       	 <item name="android:layout_weight">1.0</item>
+       	 <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+    </style>
+    
+    <style name="site_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>        
+    </style>
+    
+    <style name="site_item_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>        
+    </style>
+</resources>

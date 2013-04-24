@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pjq.glamour_xiapu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="323675053b71b0eb4f9a1aafabeac9b0" />
+        
+        <activity
+            android:name="com.pjq.glamour_xiapu.TabHostActivity"
+            android:label="@string/app_name"
+            android:process=":main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />  
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".PlanActivity"></activity>
+        <activity android:name=".AutoNaviMapActivity"
+     				android:process=":map"></activity>
+        <activity android:name=".GuideActivity"></activity>
+        <activity android:name=".CommentActivity"></activity>
+        <activity android:name=".Morectivity"></activity>
+        <activity android:name=".GuideDownloadActivity"></activity>
+        <activity android:name=".OverviewCityActivity"></activity>
+          
+        <activity android:name="com.pjq.glamour_xiapu.site.YangjiaxiActivity"></activity>
+        <activity android:name="com.pjq.glamour_xiapu.site.SiteActivity"></activity>
+        <activity android:name="com.pjq.glamour_xiapu.site.XiYangDaoiActivity"></activity>
+        <activity android:name="com.pjq.glamour_xiapu.site.LiuYunSiActivity"></activity>
+        <activity android:name="com.pjq.glamour_xiapu.site.GaoLuoActivity"></activity>
+        <activity android:name="com.pjq.glamour_xiapu.site.XiapuTantuActivity"></activity>
+        
+        <activity android:name="com.pjq.glamour_xiapu.hotel.HotelActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.hotel.DiJingActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.hotel.XinDongFangActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.hotel.Su8Activity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.hotel.HuanDaoActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.hotel.ManHaDunActivity"></activity>
+       	
+       	<activity android:name="com.pjq.glamour_xiapu.restaurant.RestaurantActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.restaurant.HuTangActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.restaurant.NiuRouWangActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.restaurant.TianTianMianGuanActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.restaurant.XiongDiHuoGuoActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.restaurant.YanTianDaDiActivity"></activity>
+       	
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.TrafficActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.AirportActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.DeportActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.BusActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.StreetActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.TaxiActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.traffic.WaterTransportationActivity"></activity>
+       	
+       	<activity android:name="com.pjq.glamour_xiapu.shopping.ShoppingActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.shopping.LongShouLuActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.shopping.BuXingJieActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.shopping.TaiKangLuActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.shopping.BaiShengActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.shopping.NanJieBaiHuoActivity"></activity>
+       	
+       	<activity android:name="com.pjq.glamour_xiapu.fun.FunActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.fun.BaiDuKTVActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.fun.FuNingParkActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.fun.HuaJiaYiHaoActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.fun.JiuDaGuanActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.fun.TonyYiShouGeActivity"></activity>
+       	<activity android:name="com.pjq.glamour_xiapu.fun.WenHuaGuangChangActivity"></activity>
+       	
+    </application>
+	
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+	
+    
+</manifest>
