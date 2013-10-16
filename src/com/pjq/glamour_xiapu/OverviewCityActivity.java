@@ -1,13 +1,9 @@
 package com.pjq.glamour_xiapu;
 
-import com.pjq.glamour_xiapu.R;
-
-import android.app.Activity; 
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Window; 
-import android.widget.RadioGroup;
+import android.view.Window;
 import android.widget.TextView;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
 public class OverviewCityActivity extends Activity {
@@ -45,7 +41,7 @@ public class OverviewCityActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_overviewcity);
+		setContentView(R.layout.overviewcity);
 		
 		textView = (TextView) this.findViewById(R.id.activity_overviewcity_textview);
 		textView.setText(message);

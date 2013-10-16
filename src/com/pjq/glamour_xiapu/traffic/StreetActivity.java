@@ -1,16 +1,16 @@
 package com.pjq.glamour_xiapu.traffic;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
 import android.app.Activity; 
 import android.os.Bundle;
-import android.view.Window; 
-import android.widget.RadioGroup;
+import android.view.Window;
 import android.widget.TextView;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
-public class StreetActivity extends Activity {
+public class StreetActivity extends BaseActivity {
 	private TextView textView;
 	private TextView textView1;
 	private TextView textView2;
@@ -34,7 +34,7 @@ public class StreetActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_traffic_street);
+		setContentView(R.layout.street);
 		
 		textView = (TextView) this.findViewById(R.id.activity_traffic_street_textview);
 		textView1 = (TextView) this.findViewById(R.id.activity_traffic_street_textview1);
@@ -42,6 +42,11 @@ public class StreetActivity extends Activity {
 		textView.setText(message);
 		textView1.setText(message1);
 		textView2.setText(message2);
+
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("½ÖµÀ");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BaseActivity.BackClickListener());
 	}
 	
 }

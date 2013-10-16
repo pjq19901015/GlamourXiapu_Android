@@ -1,10 +1,12 @@
 package com.pjq.glamour_xiapu.site;
 
 
+import android.widget.ImageView;
+import android.widget.TextView;
 import com.pjq.adapter.ListViewAdapter;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 import com.pjq.listener.SiteListClickListener;
-import com.pjq.utils.Utility;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,7 +14,7 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ListView;
 
-public class SiteActivity extends Activity {
+public class SiteActivity extends BaseActivity {
 	private ListView listView;
 	private int[] imageID = new int[]{
 			R.drawable.yangjiaxi,R.drawable.xiyangdao,
@@ -34,9 +36,9 @@ public class SiteActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_site);
+		setContentView(R.layout.site);
 		
-		item = R.layout.activity_site_item;
+		item = R.layout.site_item;
 		imageViewID = R.id.activity_site_item_imageview;
 		textViewID = R.id.activity_site_item_textview_title;
 		siteListClcikListener = new SiteListClickListener(this);
@@ -46,5 +48,9 @@ public class SiteActivity extends Activity {
 												imageViewID,textViewID,siteListClcikListener));
 		
 		//Utility.setListViewHeightBasedOnChildren(listView);//重新计算Listview的高度
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("景点");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BaseActivity.BackClickListener());
 	}
 }

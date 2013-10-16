@@ -1,5 +1,7 @@
 package com.pjq.glamour_xiapu.hotel;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
 import android.app.Activity; 
@@ -8,9 +10,10 @@ import android.view.Window;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+import com.pjq.listener.BackClickListener;
 
 
-public class HuanDaoActivity extends Activity {
+public class HuanDaoActivity extends BaseActivity {
 	private RadioGroup radioGroupMiddle;
 	private RadioGroup radioGroupBottom;
 	private TextView textView;
@@ -31,13 +34,18 @@ public class HuanDaoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_hotel_huandao);
+		setContentView(R.layout.huandao);
 		
 		textView = (TextView) this.findViewById(R.id.activity_hotel_huandao_textView_tab);
 		radioGroupMiddle = (RadioGroup) this.findViewById(
 									R.id.activity_hotel_huandao_radiogroup_middle);
 		radioGroupMiddle.setOnCheckedChangeListener(new MiddleCheckedChangeListener());
 		textView.setText(hotelMessage);
+
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("»·µº´ó¾Æµê");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BackClickListener());
 	}
 	
 	private class MiddleCheckedChangeListener implements OnCheckedChangeListener{

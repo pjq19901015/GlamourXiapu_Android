@@ -1,11 +1,7 @@
 package com.pjq.listener;
 
-import com.pjq.glamour_xiapu.fun.BaiDuKTVActivity;
-import com.pjq.glamour_xiapu.fun.FuNingParkActivity;
-import com.pjq.glamour_xiapu.fun.HuaJiaYiHaoActivity;
-import com.pjq.glamour_xiapu.fun.JiuDaGuanActivity;
-import com.pjq.glamour_xiapu.fun.TonyYiShouGeActivity;
-import com.pjq.glamour_xiapu.fun.WenHuaGuangChangActivity;   
+import com.pjq.glamour_xiapu.fun.*;
+import com.pjq.glamour_xiapu.fun.TongYiShouGeActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -50,7 +46,7 @@ public class FunListClickListener extends MyClickListener {
 			break;  
 		case 5:
 			Intent intent6 = new Intent();
-			intent6.setClass(context, TonyYiShouGeActivity.class);
+			intent6.setClass(context, TongYiShouGeActivity.class);
 			context.startActivity(intent6);
 			break;  
 		}

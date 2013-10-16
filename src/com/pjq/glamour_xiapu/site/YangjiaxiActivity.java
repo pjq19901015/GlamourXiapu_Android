@@ -1,5 +1,7 @@
 package com.pjq.glamour_xiapu.site;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
 import android.app.Activity; 
@@ -10,7 +12,7 @@ import android.widget.TextView;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
-public class YangjiaxiActivity extends Activity {
+public class YangjiaxiActivity extends BaseActivity {
 	private RadioGroup radioGroupMiddle;
 	private RadioGroup radioGroupBottom;
 	private TextView textView;
@@ -32,13 +34,18 @@ private String hotelTraffic = "1、霞浦牙城下高速路按指示牌行驶(自由方便推荐)\n" 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_site_yangjiaxi);
+		setContentView(R.layout.yangjiaxi);
 		
 		textView = (TextView) this.findViewById(R.id.activity_site_yangjiaxi_textView_tab);
 		radioGroupMiddle = (RadioGroup) this.findViewById(
 									R.id.activity_site_yangjiaxi_radiogroup_middle);
 		radioGroupMiddle.setOnCheckedChangeListener(new MiddleCheckedChangeListener());
 		textView.setText(hotelMessage);
+
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("杨家溪");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BaseActivity.BackClickListener());
 	}
 	
 	private class MiddleCheckedChangeListener implements OnCheckedChangeListener{

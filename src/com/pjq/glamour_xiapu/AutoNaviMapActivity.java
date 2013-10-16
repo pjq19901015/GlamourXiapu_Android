@@ -1,6 +1,5 @@
 package com.pjq.glamour_xiapu;
 
-
 import java.util.List;
 
 import android.content.Context;

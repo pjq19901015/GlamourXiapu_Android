@@ -77,7 +77,7 @@
        	<activity android:name="com.pjq.glamour_xiapu.fun.FuNingParkActivity"></activity>
        	<activity android:name="com.pjq.glamour_xiapu.fun.HuaJiaYiHaoActivity"></activity>
        	<activity android:name="com.pjq.glamour_xiapu.fun.JiuDaGuanActivity"></activity>
-       	<activity android:name="com.pjq.glamour_xiapu.fun.TonyYiShouGeActivity"></activity>
+       	<activity android:name=".fun.TongYiShouGeActivity"></activity>
        	<activity android:name="com.pjq.glamour_xiapu.fun.WenHuaGuangChangActivity"></activity>
        	
     </application>

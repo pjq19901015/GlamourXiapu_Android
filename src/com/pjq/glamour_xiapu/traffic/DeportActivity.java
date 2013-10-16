@@ -1,16 +1,16 @@
 package com.pjq.glamour_xiapu.traffic;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
 import android.app.Activity; 
 import android.os.Bundle;
-import android.view.Window; 
-import android.widget.RadioGroup;
+import android.view.Window;
 import android.widget.TextView;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
-public class DeportActivity extends Activity {
+public class DeportActivity extends BaseActivity {
 	private TextView textView;
 	private String message = 
 		"         霞浦站 距县城4公里左右，建筑呈仿唐风格。站房总建筑面积3100" +
@@ -29,10 +29,15 @@ public class DeportActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_traffic_deport);
+		setContentView(R.layout.deport);
 		
 		textView = (TextView) this.findViewById(R.id.activity_traffic_deport_textview);
 		textView.setText(message);
+
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("铁路");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BaseActivity.BackClickListener());
 	}
 	
 }

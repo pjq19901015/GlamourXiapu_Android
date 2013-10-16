@@ -1,16 +1,17 @@
 package com.pjq.glamour_xiapu.fun;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
-import android.app.Activity; 
 import android.os.Bundle;
-import android.view.Window; 
+import android.view.Window;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
-public class BaiDuKTVActivity extends Activity {
+public class BaiDuKTVActivity extends BaseActivity {
 	private RadioGroup radioGroupMiddle;
 	private RadioGroup radioGroupBottom;
 	private TextView textView;
@@ -21,17 +22,25 @@ public class BaiDuKTVActivity extends Activity {
 		"服务比较周到，是三五好友小聚消磨时间的好去处。服务热情周到外，还会主动推荐最新优惠活动感觉很贴心。\n";
 	private String hotelTraffic = 
 		"霞浦县福宁大道景缘居对面 ";
+    private TextView mTxtTitle;
+    private ImageView mImgviewBack;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_fun_baiduktv);
+		setContentView(R.layout.baiduktv);
 		
 		textView = (TextView) this.findViewById(R.id.activity_fun_baiduktv_textView_tab);
+		mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
 		radioGroupMiddle = (RadioGroup) this.findViewById(
 									R.id.activity_fun_baiduktv_radiogroup_middle);
 		radioGroupMiddle.setOnCheckedChangeListener(new MiddleCheckedChangeListener());
 		textView.setText(hotelMessage);
+
+        mTxtTitle.setText("百度音乐会所");
+
+        mImgviewBack = (ImageView) this.findViewById(R.id.title_imgview_back);
+        mImgviewBack.setOnClickListener(new BackClickListener());
 	}
 	
 	private class MiddleCheckedChangeListener implements OnCheckedChangeListener{
@@ -49,8 +58,6 @@ public class BaiDuKTVActivity extends Activity {
 				textView.setText("13626986566");
 				break;
 			}
-			
 		}
-		
 	}
 }

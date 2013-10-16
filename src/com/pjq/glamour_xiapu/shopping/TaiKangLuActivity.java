@@ -1,5 +1,7 @@
 package com.pjq.glamour_xiapu.shopping;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
 import android.app.Activity; 
@@ -10,7 +12,7 @@ import android.widget.TextView;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
-public class TaiKangLuActivity extends Activity {
+public class TaiKangLuActivity extends BaseActivity {
 	private RadioGroup radioGroupMiddle;
 	private RadioGroup radioGroupBottom;
 	private TextView textView;
@@ -22,13 +24,18 @@ public class TaiKangLuActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_shopping_taikanglu);
+		setContentView(R.layout.taikanglu);
 		
 		textView = (TextView) this.findViewById(R.id.activity_shopping_taikanglu_textView_tab);
 		radioGroupMiddle = (RadioGroup) this.findViewById(
 									R.id.activity_shopping_taikanglu_radiogroup_middle);
 		radioGroupMiddle.setOnCheckedChangeListener(new MiddleCheckedChangeListener());
 		textView.setText(hotelMessage);
+
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("Ì«¿µÂ·");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BaseActivity.BackClickListener());
 	}
 	
 	private class MiddleCheckedChangeListener implements OnCheckedChangeListener{

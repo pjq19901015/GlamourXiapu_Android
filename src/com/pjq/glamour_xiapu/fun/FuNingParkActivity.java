@@ -1,8 +1,9 @@
 package com.pjq.glamour_xiapu.fun;
 
+import android.widget.ImageView;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
 
-import android.app.Activity; 
 import android.os.Bundle;
 import android.view.Window; 
 import android.widget.RadioGroup;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 
-public class FuNingParkActivity extends Activity {
+public class FuNingParkActivity extends BaseActivity {
 	private RadioGroup radioGroupMiddle;
 	private RadioGroup radioGroupBottom;
 	private TextView textView;
@@ -27,17 +28,25 @@ public class FuNingParkActivity extends Activity {
 		"休闲娱乐等多位一体的山地休闲公园，其中含烈士陵园区。\n\n" ;
 	private String hotelTraffic = 
 		"福建省宁德市霞浦县福宁长途汽车站对面 ";
+    private TextView mTxtTitle;
+    private ImageView mImgviewBack;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_fun_funingpark);
+		setContentView(R.layout.funingpark);
 		
 		textView = (TextView) this.findViewById(R.id.activity_fun_funingpark_textView_tab);
 		radioGroupMiddle = (RadioGroup) this.findViewById(
 									R.id.activity_fun_funingpark_radiogroup_middle);
 		radioGroupMiddle.setOnCheckedChangeListener(new MiddleCheckedChangeListener());
 		textView.setText(hotelMessage);
+
+        mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("福宁文化公园");
+
+        mImgviewBack = (ImageView) this.findViewById(R.id.title_imgview_back);
+        mImgviewBack.setOnClickListener(new BackClickListener());
 	}
 	
 	private class MiddleCheckedChangeListener implements OnCheckedChangeListener{

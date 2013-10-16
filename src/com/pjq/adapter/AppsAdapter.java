@@ -34,7 +34,7 @@ public class AppsAdapter extends BaseAdapter {
 	
 	//存放各功能的名称
 	private String[] illustrates = new String[]{
-			"资讯和画报","导览下载","景点","住宿",
+			"资讯画报","导览下载","景点","住宿",
 			"餐饮","购物","娱乐","交通",
 			"城市概览","天气","我的最爱"
 	};

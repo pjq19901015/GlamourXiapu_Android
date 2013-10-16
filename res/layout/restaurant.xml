@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/restaurant_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/titlebar"/>
+    
+   <RelativeLayout 
+       android:layout_below="@id/restaurant_titlebar"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+	   		<ListView
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/activity_restaurant_listview">  		        
+			</ListView>  
+	</RelativeLayout>
+
+</RelativeLayout>

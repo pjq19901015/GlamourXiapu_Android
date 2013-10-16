@@ -2,12 +2,12 @@ package com.pjq.listener;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 
 public class BackClickListener implements OnClickListener {
 	private Activity activity;
+    private Context context;
 	public BackClickListener(Class  c) {
 		try {
 			   //Class.forName(c.getName());
@@ -22,6 +22,7 @@ public class BackClickListener implements OnClickListener {
 	}
 	@Override
 	public void onClick(View v) {
+        int i ;
 		activity.finish();
 	}
 	

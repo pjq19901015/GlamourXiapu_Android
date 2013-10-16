@@ -1,9 +1,11 @@
 package com.pjq.glamour_xiapu.traffic;
 
 
+import android.widget.ImageView;
+import android.widget.TextView;
 import com.pjq.adapter.ListViewAdapter;
+import com.pjq.glamour_xiapu.BaseActivity;
 import com.pjq.glamour_xiapu.R;
-import com.pjq.listener.HotelListClickListener; 
 import com.pjq.listener.TrafficListClickListener;
 
 import android.app.Activity;
@@ -12,7 +14,7 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ListView;
 
-public class TrafficActivity extends Activity {
+public class TrafficActivity extends BaseActivity {
 	private ListView listView;
 	private int[] imageID = new int[]{
 			R.drawable.traffic_airport, R.drawable.traffic_deport,
@@ -34,9 +36,9 @@ public class TrafficActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_traffic);
+		setContentView(R.layout.traffic);
 		
-		item = R.layout.activity_traffic_item;
+		item = R.layout.traffic_item;
 		imageViewID = R.id.activity_traffic_item_imageview;
 		textViewID = R.id.activity_traffic_item_textview_title;
 		siteListClcikListener = new TrafficListClickListener(this);
@@ -44,6 +46,9 @@ public class TrafficActivity extends Activity {
 		listView = (ListView) this.findViewById(R.id.activity_traffic_listview);
 		listView.setAdapter(new ListViewAdapter(this,imageID,illustrates,item,
 												imageViewID,textViewID,siteListClcikListener));
-		
+        TextView mTxtTitle = (TextView) this.findViewById(R.id.title_txt_title);
+        mTxtTitle.setText("½»Í¨");
+        ImageView back = (ImageView) this.findViewById(R.id.title_imgview_back);
+        back.setOnClickListener(new BaseActivity.BackClickListener());
 	}
 }

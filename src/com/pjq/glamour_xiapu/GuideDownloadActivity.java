@@ -14,7 +14,7 @@ public class GuideDownloadActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);  //设置无标题栏
-		setContentView(R.layout.activity_guide_download);
+		setContentView(R.layout.guide_download);
 		
 		imageViewBack = (ImageView) this.findViewById(R.id.activity_guide_download_back);
 		imageViewBack.setOnClickListener(new BackClickListener());
