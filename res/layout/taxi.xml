@@ -44,7 +44,8 @@
 	            android:layout_width="match_parent" 
 	        	android:layout_height="wrap_content"
 	        	style="@style/site_text"  
-	        	android:id="@+id/activity_traffic_taxi_textview1"/> 
+	        	android:id="@+id/activity_traffic_taxi_textview1"
+                android:paddingBottom="10dp"/>
 	         
 	    </RelativeLayout>
      

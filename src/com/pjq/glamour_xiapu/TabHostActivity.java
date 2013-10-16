@@ -58,7 +58,6 @@ public class TabHostActivity extends TabActivity {
 		tabhost.setCurrentTab(2); // 设置默认显示的标签
 
 		group.setOnCheckedChangeListener(new CheckedChangeListener());
-
 	}
 
 	/**
@@ -89,9 +88,7 @@ public class TabHostActivity extends TabActivity {
 				tabhost.setCurrentTabByTag(TAB_MORE);
 				break;
 			}
-
 		}
-
 	}
 
 	@Override
@@ -101,7 +98,6 @@ public class TabHostActivity extends TabActivity {
 			new AlertDialog.Builder(this).setTitle("注意").setMessage(
 					"您确定要退出魅力霞浦吗？").setNegativeButton("取消",
 					new OnClickListener() {
-
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 
